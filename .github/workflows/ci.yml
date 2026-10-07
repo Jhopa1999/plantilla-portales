@@ -50,6 +50,9 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
+      - name: Generar Prisma Client
+        run: npm run prisma:generate
+
       - name: Regenerar contratos
         run: npm run contracts:generate
 
