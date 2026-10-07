@@ -63,6 +63,9 @@ jobs:
             exit 1
           fi
 
+      - name: Construir API Client
+        run: npm run build:api-client
+
       - name: Pruebas unitarias (Jest)
         run: npm run test:unit
 
